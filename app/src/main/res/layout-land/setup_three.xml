@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="8dp">
+
+    <!-- Überschrift -->
+    <TextView
+        android:id="@+id/lbl_uberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/txtSize_Ueberschrift"
+        android:textStyle="italic"
+        android:textColor="#848484"
+        android:text="@string/setupC_uberschrift"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+    <!--  Textelement -->
+    <TextView
+        android:id="@+id/lbl_importContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lbl_uberschrift"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/setupC_Info"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+
+    <!-- Um die Kontaktliste einzurahmen -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lbl_importContact"
+        android:layout_above="@+id/lbl_swipe2navigate"
+        android:background="#FAAC58"
+        >
+
+
+
+        <ListView
+            android:id="@+id/lstView_Kontakte"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/abstand_gering"
+            android:background="#FFFFFF"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <!-- Unterstes Textelement (Hinweis zum wischen)-->
+    <TextView
+        android:id="@+id/lbl_swipe2navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/imgView_Navi"
+        android:textSize="@dimen/txtSize_hinweis"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:text="@string/swype2navigate"
+        android:layout_marginTop="@dimen/abstand_gering"
+        />
+
+
+    <!-- Navigationsbild -->
+    <ImageView
+        android:id="@+id/imgView_Navi"
+        android:layout_width="@dimen/breite_naviImage"
+        android:layout_height="@dimen/hohe_naviImage"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/navi_3"
+        />
+
+
+
+
+</RelativeLayout>

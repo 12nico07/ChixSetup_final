@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="8dp">
+
+    <!-- Überschrift -->
+    <TextView
+        android:id="@+id/lbl_uberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        android:text="@string/setupD_uberschrift"
+        android:textColor="#848484"
+        android:textSize="@dimen/txtSize_Ueberschrift"
+        android:textStyle="italic" />
+
+
+    <!-- Textelement -->
+    <TextView
+        android:id="@+id/lbl_fertig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_uberschrift"
+        android:text="@string/setupD_text"
+        android:textColor="#000000"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal" />
+
+
+    <!-- Button zum Abschliesen -->
+    <Button
+        android:id="@+id/btn_Fertigstellen"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hohe_btn_Fertig"
+        android:layout_above="@+id/imgView_Navi"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        android:background="#FA8258"
+        android:onClick="btn_fertig_onClick"
+        android:text="@string/setupD_btnText"
+        android:textColor="#000000"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="bold" />
+
+
+    <!-- Navigationsbild -->
+    <ImageView
+        android:id="@+id/imgView_Navi"
+        android:layout_width="@dimen/breite_naviImage"
+        android:layout_height="@dimen/hohe_naviImage"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/navi_4" />
+
+
+</RelativeLayout>
+
+

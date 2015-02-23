@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#FFFFFF">
+
+    <!-- Überschrift -->
+    <TextView
+        android:id="@+id/lbl_uberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/txtSize_Ueberschrift"
+        android:textStyle="italic"
+        android:textColor="#848484"
+        android:text="@string/setupB_uberschrift"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+
+
+    <!-- Erstes Textelement -->
+    <TextView
+        android:id="@+id/lbl_whyPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lbl_uberschrift"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/setupB_WhyPW"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+
+    <!-- TextView ob die PWs übereinstimmen -->
+    <TextView
+        android:id="@+id/lbl_pwVergleich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lbl_whyPW"
+        android:textSize="@dimen/txtSize_hinweis"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/pwInfo_default"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+
+
+
+
+    <!-- TextView das zur EIngabe des ersten PW auffordert. -->
+    <TextView
+        android:id="@+id/lbl_pwEingabe1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/setupB_Passworteingabe"
+        android:layout_below="@+id/lbl_pwVergleich"
+        android:layout_marginTop="@dimen/abstand_gering"
+        />
+
+
+
+    <!-- EditText um das erste PW einzugeben -->
+    <EditText
+        android:id="@+id/txt_pw1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:shadowColor="#000000"
+        android:background="#D8D8D8"
+        android:layout_toRightOf="@+id/lbl_pwEingabe1"
+        android:textSize="@dimen/txtSize_Standart"
+        android:layout_marginLeft="@dimen/abstand_gering"
+        android:layout_alignBottom="@+id/lbl_pwEingabe1"
+        />
+
+    <!-- TextView das zur EIngabe des zweiten PW auffordert. -->
+    <TextView
+        android:id="@+id/lbl_pwEingabe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/setupB_Passworteingabe"
+        android:layout_below="@+id/lbl_pwEingabe1"
+        android:layout_marginTop="@dimen/abstand_gering"
+        />
+
+
+    <!-- EditText um das zweite PW einzugeben -->
+    <EditText
+        android:id="@+id/txt_pw2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:shadowColor="#000000"
+        android:background="#D8D8D8"
+        android:layout_toRightOf="@+id/lbl_pwEingabe2"
+        android:layout_alignBottom="@id/lbl_pwEingabe2"
+        android:textSize="@dimen/txtSize_Standart"
+        android:layout_marginLeft="@dimen/abstand_gering"
+
+        />
+
+
+
+    <!-- Unterstes Textelement (Hinweis zum wischen)-->
+    <TextView
+        android:id="@+id/lbl_swipe2navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/imgView_Navi"
+        android:textSize="@dimen/txtSize_hinweis"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:text="@string/swype2navigate"
+        android:layout_marginTop="@dimen/abstand_gering"
+        />
+
+
+    <!-- Navigationsbild -->
+    <ImageView
+        android:id="@+id/imgView_Navi"
+        android:layout_width="@dimen/breite_naviImage"
+        android:layout_height="@dimen/hohe_naviImage"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/navi_2"
+        />
+
+
+
+</RelativeLayout>

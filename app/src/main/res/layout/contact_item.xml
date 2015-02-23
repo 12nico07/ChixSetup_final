@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+    <!-- android:weightSum="1" -->
+
+
+    <!-- ImageView fürs Profilbild -->
+    <ImageView
+        android:id="@+id/item_imgV_bild"
+        android:layout_width="@dimen/groesse_ImgView_item_cLst"
+        android:layout_height="@dimen/groesse_ImgView_item_cLst"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        android:layout_marginRight="@dimen/abstand_gering"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:maxHeight="@dimen/groesse_ImgView_item_cLst"
+        android:maxWidth="@dimen/groesse_ImgView_item_cLst"
+        android:minHeight="@dimen/groesse_ImgView_item_cLst"
+        android:minWidth="@dimen/groesse_ImgView_item_cLst"
+        android:src="@drawable/ic_launcher" />
+
+
+    <!-- TextView für den Namen -->
+    <TextView
+        android:id="@+id/item_txtV_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hoehe_name_item_cLst"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        android:layout_marginLeft="@dimen/abstand_gering"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:layout_toRightOf="@+id/item_imgV_bild"
+        android:text="@string/setup_contact_default_name"
+        android:textSize="@dimen/txtSize_name_item_cLst" />
+
+    <!-- TextView für die Telefonnummer(n) -->
+    <TextView
+        android:id="@+id/item_txtV_nummer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hoehe_tel_item_cLst"
+        android:layout_alignBottom="@+id/item_imgV_bild"
+        android:layout_below="@+id/item_txtV_name"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        android:layout_marginLeft="@dimen/abstand_gering"
+        android:layout_toRightOf="@+id/item_imgV_bild"
+        android:text="@string/setup_contact_default_tel"
+        android:textSize="@dimen/txtSize_tel_item_cLst" />
+
+
+</RelativeLayout>

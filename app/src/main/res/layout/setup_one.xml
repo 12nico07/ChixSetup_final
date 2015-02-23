@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#FFFFFF">
+
+    <!-- Überschrift -->
+    <TextView
+        android:id="@+id/lbl_uberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/txtSize_Ueberschrift"
+        android:textStyle="italic"
+        android:textColor="#848484"
+        android:text="@string/setupA_uberschrift"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+    <!-- Erstes Textelement -->
+    <TextView
+        android:id="@+id/lbl_herzlichWillkommen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lbl_uberschrift"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/setupA_herzlichWilkommen"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+    <!-- Zweites Textelement -->
+    <TextView
+        android:id="@+id/lbl_WhatIsChix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_herzlichWillkommen"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/setupA_WasIstChix"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+
+    <!-- Drittes Textelement -->
+    <TextView
+        android:id="@+id/lbl_SetupInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_WhatIsChix"
+        android:textSize="@dimen/txtSize_Standart"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:text="@string/setupA_SetupInfo"
+        android:layout_marginTop="@dimen/abstand_gering"
+        android:layout_marginBottom="@dimen/abstand_gering"
+        />
+
+
+    <!-- Unterstes Textelement (Hinweis zum wischen)-->
+    <TextView
+        android:id="@+id/lbl_swipe2navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/imgView_Navi"
+        android:textSize="@dimen/txtSize_hinweis"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:text="@string/swype2navigate"
+        />
+
+
+    <!-- Navigationsbild -->
+    <ImageView
+        android:id="@+id/imgView_Navi"
+        android:layout_width="@dimen/breite_naviImage"
+        android:layout_height="@dimen/hohe_naviImage"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/navi_1"
+        />
+
+
+
+
+</RelativeLayout>

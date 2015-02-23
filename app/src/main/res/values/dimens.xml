@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="abstand_rand">16dp</dimen>
+    <dimen name="abstand_gering">5dp</dimen>
+    <dimen name="groesse_ImgView_item_cLst">50dp</dimen>
+    <dimen name="hoehe_name_item_cLst">25dp</dimen>
+    <dimen name="txtSize_name_item_cLst">20sp</dimen>
+    <dimen name="hoehe_tel_item_cLst">15dp</dimen>
+    <dimen name="txtSize_tel_item_cLst">12sp</dimen>
+    <dimen name="txtSize_Ueberschrift">30sp</dimen>
+    <dimen name="txtSize_Standart">20sp</dimen>
+    <dimen name="hohe_btn_Fertig">70dp</dimen>
+    <dimen name="hohe_naviImage">20dp</dimen>
+    <dimen name="breite_naviImage">80dp</dimen>
+    <dimen name="txtSize_hinweis">15sp</dimen>
+
+</resources>
